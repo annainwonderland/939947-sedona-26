@@ -8,29 +8,51 @@
     <header>
       <nav class="navigation-main">
         <a href="main">
-          <img src="img/logo-sedona.svg">
+          <div class="site-logo"><img src="img/logo-sedona.svg" alt="логотип Седоны"></div>
         </a>
         <ul>
-        <li><a href="about">Информация</a></li>
-        <li><a href="gallery">Фото и видео</a></li>
-        <li><a href="state-map">Карта Штата</a></li>
-        <li><a href="hotels">Гостиницы</a></li>
+        <li><a href="about.html">Информация</a></li>
+        <li><a href="gallery.html">Фото и видео</a></li>
+        <li><a href="state-map.html">Карта Штата</a></li>
+        <li><a href="catalogue.html">Гостиницы</a></li>
       </ul>
       </nav>
     </header>
 <main>
-  <section>
-    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+  <div class="postcard">
+    <img src="postcard.jpeg" alt="Вид гор Седоны">
+    <h1 class="visually-hidden">Добро пожаловать в прекрасную Седону. Ведь Гранд Каньон - <em>отстой!</em></h1>
+    <p><img src="postcardtext.jpeg"></p>
+  </div>
+  <section class="about">
+    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </section>
+  <section class="interested">
+    <h4>Заинтересовались?</h4>
+    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+  </section>
+  <section class="hotel-search">
+  <h4>Поиск гостиницы в Седоне</h4>
+  <ul class="hotels">
+    <li class="date">Дата заезда:</li>
+    <li class="date">Дата выезда:</li>
+    <li class="guests">Взрослые:</li>
+    <li class="guests">Дети:</li>
+  </ul>
+    <a class="button" href="catalogue.html">Найти</a>
+  </section>
 </main>
-
 <footer>
-  <a href="">#VISITSEDONA</p>
-  <a href="http://" aria-label="Седона в Твиттере"><img src="img/twitter.svg"></a>
-  <a href="http://" aria-label="Седона в Фейсбуке"><img src="img/facebook.svg"></a>
-  <a href="http://" aria-label="Седона в Ютьюбе"><img src="img/youtube.svg"></a>
-  <p>WEBSITE BY<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg"></a></p>
-</footer>
+    <p class="footer-hashtag"><a href="">#VISITSEDONA</a></p>
+    <p class="footer-social">
+      <ul>
+    <li><a class="social-button" href="http://" aria-label="Седона в Твиттере"><img src="img/twitter.svg"></a></li>
+    <li><a class="social-button" href="http://" aria-label="Седона в Фейсбуке"><img src="img/facebook.svg"></a></li>
+    <li><a class="social-button" href="http://" aria-label="Седона в Ютьюбе"><img src="img/youtube.svg"></a></li>
+    </ul>
+    </p>
+    <p class="footer-copyright">WEBSITE BY<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип Эйчтиэмэль Академии"></a></p>
+  </footer>
   </body>
 </html>
