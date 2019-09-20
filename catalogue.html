@@ -5,15 +5,16 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="wrapper">
     <header>
       <nav class="navigation-main">
         <a href="main">
-          <div class="site-logo"><img src="img/logo-sedona.svg"></div>
+          <div class="site-logo"><img src="img/logo-sedona.svg" alt="логотип Седоны"></div>
         </a>
         <ul>
-        <li><a href="about">Информация</a></li>
-        <li><a href="gallery">Фото и видео</a></li>
-        <li><a href="state-map">Карта Штата</a></li>
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Карта Штата</a></li>
         <li><a href="catalogue.html">Гостиницы</a></li>
       </ul>
       </nav>
@@ -22,34 +23,46 @@
 <section class="hotel-description">
     <ul>
         <li>
-            <li class="hotel-image"><img src="img/amara.jpeg"></li>
-            <li><h2 class="hotel-name">Amara Resort & Spa</h2></li>
-            <li class="hotel-type">Гостиница</li>
-            <li class="price">От 4000 р.</li>
-            <li><a href="amararesort.html" aria-label="Подробное описание">Подробнее</li>
-                <li><a class="button">Забронировать</a></li>
-                <li class="level" aria-label="четыре звезды"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></li>
-                <li class="raiting">Рейтинг: 8,5</li>
+            <div class="hotel-image"><img src="img/amara.jpeg" alt="изображение гостиницы"></div>
+            <h2 class="hotel-name">Amara Resort & Spa</h2>
+            <span class="hotel-type">Гостиница</span>
+            <span class="price">От 4000 р.</span>
+            <a href="blue-button" aria-label="Подробное описание">Подробнее</a>
+            <a class="button">Забронировать</a></li>
+                <ul class="level" aria-label="четыре звезды">
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                </ul>
+            <span class="raiting">Рейтинг: 8,5</span>
         </li>
         <li>
-                <li class="hotel-image"><img src="img/desert.jpeg"></li>
-                <li><h2 class="hotel-name">Desert Quail Inn</h2></li>
-                <li class="hotel-type">Мотель</li>
-                <li class="price">От 3000 р.</li>
-                <li><a href="desertquail.html" aria-label="Подробное описание">Подробнее</li>
-                    <li><a class="button">Забронировать</a></li>
-                    <li class="level" aria-label="три звезды"><img src="img/star.svg"><img src="img/star.svg"><img src="img/star.svg"></li>
-                    <li class="raiting">Рейтинг: 8,9</li>
+            <div class="hotel-image"><img src="img/desert.jpeg" alt="изображение мотеля"></div>
+            <h2 class="hotel-name">Desert Quail Inn</h2>
+            <span class="hotel-type">Мотель</span>
+            <span class="price">От 3000 р.</span>
+            <a href="blue-button" aria-label="Подробное описание">Подробнее</a>
+            <a class="button">Забронировать</a></li>
+                <ul class="level" aria-label="три звезды">
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                </ul>
+            <span class="raiting">Рейтинг: 8,9</span>
         </li>
         <li>
-                <li class="hotel-image"><img src="img/village.jpeg"></li>
-                <li><h2 class="hotel-name">Villas at Poco Diablo</h2></li>
-                <li class="hotel-type">Апартаменты</li>
-                <li class="price">От 2000 р.</li>
-                <li><a href="villasatpocodiablo.html" aria-label="Подробное описание">Подробнее</li>
-                    <li><a class="button">Забронировать</a></li>
-                    <li class="level" aria-label="две звезды"><img src="img/star.svg"><img src="img/star.svg"></li>
-                    <li class="raiting">Рейтинг: 9,2</li>
+            <div class="hotel-image"><img src="img/villas.jpeg" alt="изображение апартаментов"></div>
+            <h2 class="hotel-name">Villas at Poco Diablo</h2>
+            <span class="hotel-type">Апартаменты</span>
+            <span class="price">От 2000 р.</span>
+            <a href="blue-button" aria-label="Подробное описание">Подробнее</a>
+            <a class="button">Забронировать</a></li>
+                <ul class="level" aria-label="две звезды">
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                  <li><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
+                </ul>
+            <span class="raiting">Рейтинг: 9,2</span>
         </li>
     </ul>
 </section>
@@ -65,5 +78,6 @@
             </p>
             <p class="footer-copyright">WEBSITE BY<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип Эйчтиэмэль Академии"></a></p>
           </footer>
+        </div>
             </body>
           </html>
