@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="Седона в Аризоне" description="Маленький городок, который лучше Гранд-Кэньона">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
       <div class="wrapper">
     <header>
       <nav class="navigation-main">
-        <a href="main">
+        <a href="index.html">
           <div class="site-logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="логотип Седоны"></div>
         </a>
         <ul>
@@ -20,18 +20,16 @@
       </nav>
     </header>
 <main>
-  <div class="postcard">
-    <img src="img/postcard.jpeg" alt="Вид гор Седоны">
-    </div>
+  <div class="postcard"></div>
     <div class="welcome" style="background-color:#333333;">
-      <img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в прекрасную Седону. Ведь Гранд Каньон - отстой">
+      <h1 class="visually-hidden"><img src="img/intro-welcome.svg" width="459" height="353" alt="Добро пожаловать в прекрасную Седону. Ведь Гранд Каньон - отстой"></h1>
     </div>
   <section class="about">
-    <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+    <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
     <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
   </section>
   <section class="perks1">
-    <h2>Настоящий городок</h2>
+    <h3>Настоящий городок</h3>
     <span class="number">— №1 —</span>
     <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
   </section>
@@ -49,39 +47,33 @@
     </ul>
   </div>
   <section class="perks2">
-    <h2>Там есть мост Дьявола</h2>
+    <h3>Там есть мост Дьявола</h3>
     <span class="number">— №2 —</span>
     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
   </section>
   <section class="perks3">
     <div class="perk">
-        <h2>Небольшая площадь</h2>
+        <h3>Небольшая площадь</h3>
         <span class="number">— №3 —</span>
         <p>Все достопримечательности находятся очень близко</p>
     </div>
     <div class="perk">
-        <h2>Красивая дорога</h2>
+        <h3>Красивая дорога</h3>
         <span class="number">— №4 —</span>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
     </div>
     <div class="perk">
-        <h2>Мало туристов</h2>
+        <h3>Мало туристов</h3>
         <span class="number">— №5 —</span>
         <p>Большинство едет в гранд каньон и толпится там</p>
     </div>
   </section>
   <section class="interested">
-    <h3>Заинтересовались?</h3>
+    <h4>Заинтересовались?</h4>
     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
   </section>
   <section class="hotel-search">
-  <h3>Поиск гостиницы в Седоне</h3>
-  <ul class="hotels">
-    <li class="date">Дата заезда:</li>
-    <li class="date">Дата выезда:</li>
-    <li class="guests">Взрослые:</li>
-    <li class="guests">Дети:</li>
-  </ul>
+  <button type="button">Поиск гостиницы в Седоне</button>
     <a class="button" href="catalogue.html">Найти</a>
   </section>
 </main>
@@ -97,3 +89,18 @@
   </div>
   </body>
 </html>
+
+<form action="catalogue.html" method="post">
+  <label>Дата заезда
+  <input type="text" name="checkin" class="dates">
+  </label>
+  <label>Дата выезда
+    <input type="text" name="checkout" class="dates">
+  </label>
+  <label>Взрослые
+    <input type="number" name="adults" class="quantity">
+  </label>
+  <label>Дети
+    <input type="number" name="kids" class="quantity">
+  </label>
+</form>
