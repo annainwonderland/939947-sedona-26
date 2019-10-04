@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -11,7 +14,7 @@
               <a href="index.html">
                 <div class="site-logo"><img src="img/logo-sedona.svg" width="140" height="71" alt="логотип Седоны"></div>
               </a>
-              <ul>
+              <ul class="navigation">
               <li><a href="#">Информация</a></li>
               <li><a href="#">Фото и видео</a></li>
               <li><a href="#">Карта Штата</a></li>
@@ -34,15 +37,32 @@
             <label><input type="checkbox" value="Мотель" checked>Мотель</label>
             <label><input type="checkbox" value="Апартаменты" checked>Апартаменты</label>
           </fieldset>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                  <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+          </div>
         </form>
       </div>
       <section class="results">
-        <h1 class="found">Найдено:3</h1>
+        <h1 class="found">Найдено: 3</h1>
         <ul class="sort">
           <li>Сортировка:</li>
           <li>по цене</li>
           <li>по типу</li>
           <li>по рейтингу</li>
+          <li class="up"><input type="image" src="img/icon-up-dir.svg" alt="Наверх"></li>
+          <li class="down"><input type="image" src="img/icon-down-dir.svg" alt="Вниз"></li>
         </ul>
       </section>
 <section class="hotel-description">
@@ -52,14 +72,14 @@
             <h2 class="hotel-name">Amara Resort & Spa</h2>
             <span class="hotel-type">Гостиница</span>
             <span class="price">От 4000 р.</span>
-            <button type="submit" name="more" aria-label="Подробное описание">Подробнее</button>
-            <button type="submit" name="book" aria-label="Забронировать">Забронировать</button>
+            <button class="more" type="submit" name="more-info" aria-label="Подробное описание">Подробнее</button>
+            <button class="book" type="submit" name="booking" aria-label="Забронировать">Забронировать</button>
           </li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
-            <li><span class="raiting">Рейтинг: 8,5</span>
+            <li><span class="rating">Рейтинг: 8,5</span>
             </li>
           </ul>
         </section>
@@ -70,14 +90,14 @@
             <h2 class="hotel-name">Desert Quail Inn</h2>
             <span class="hotel-type">Мотель</span>
             <span class="price">От 3000 р.</span>
-            <button type="submit" name="more" aria-label="Подробное описание">Подробнее</button>
-            <button type="submit" name="book" aria-label="Забронировать">Забронировать</button>
+            <button class="more" type="submit" name="more-info" aria-label="Подробное описание">Подробнее</button>
+            <button class="book" type="submit" name="booking" aria-label="Забронировать">Забронировать</button>
           </li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
             <li>
-              <span class="raiting">Рейтинг: 8,9</span>
+              <span class="rating">Рейтинг: 8,9</span>
             </li>
           </ul>
         </section>
@@ -88,12 +108,12 @@
             <h2 class="hotel-name">Villas at Poco Diablo</h2>
             <span class="hotel-type">Апартаменты</span>
             <span class="price">От 2000 р.</span>
-            <button type="submit" name="more" aria-label="Подробное описание">Подробнее</button>
-            <button type="submit" name="book" aria-label="Забронировать">Забронировать</button>
+            <button class="more" type="submit" name="more-info" aria-label="Подробное описание">Подробнее</button>
+            <button class="book" type="submit" name="booking" aria-label="Забронировать">Забронировать</button>
           </li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
                   <li class="stars"><img src="img/star.svg" alt="голубая пятиконечная звезда"></li>
-            <li><span class="raiting">Рейтинг: 9,2</span>
+            <li><span class="rating">Рейтинг: 9,2</span>
             </li>
     </ul>
 </section>
