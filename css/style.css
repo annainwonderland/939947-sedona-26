@@ -92,18 +92,22 @@ h4 {
     background-color: #ffffff;
   }
 
-  .navigation-main a,
-  .footer-hashtag a {
+.navigation-main a,
+.footer-hashtag a,
+.hotel-description a,
+.footer-copyright a {
     color: #000000;
   }
 
 .navigation-main a:hover,
-.footer-hashtag a:hover {
+.footer-hashtag a:hover,
+.hotel-description a:hover {
   color: #81b3d2;
 }  
 
 .navigation-main a:active,
-.footer-hashtag a:active {
+.footer-hashtag a:active,
+.hotel-description a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -176,6 +180,15 @@ h4 {
     border: none;
   }
 
+  .hotel-search button:hover {
+    background-color: #604e43;
+  }
+
+  .hotel-search button:active {
+    background-color: #503e33;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   .map {
     width: 1200px;
     height: 593px;
@@ -191,6 +204,14 @@ h4 {
     background-color: #ffffff;
     opacity: 0,9;
   }
+
+  .footer-copyright a {
+    color: #231f20;
+  }
+
+  .footer-copyright img:hover {
+    color: #81b3d2;
+  }  
 
   .hotel-booking {
     width: 568px;
@@ -212,6 +233,15 @@ h4 {
     color: #ffffff;
     line-height: 26px;
     border: none;
+  }
+
+  .find:hover {
+    background-color: #669ec0;
+  }
+
+  .find:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   /* Стили для второй страницы */
@@ -382,15 +412,18 @@ h4 {
   color: #cacaca;
 }
 
+.hotel-name {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
 .hotel-image,
 .hotel-name,
 .hotel-type,
 .price {
   text-align: left;
 }
-
-
-
 
 .more {
   width: 110px;
@@ -403,6 +436,15 @@ h4 {
   border: none;
 }
 
+.more:hover {
+  background-color: #669ec0;
+}
+
+.more:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .book {
   width: 142px;
   height: 27px;
@@ -412,6 +454,15 @@ h4 {
   text-align: center;
   color: #ffffff;
   border: none;
+}
+
+.book:hover {
+  background-color: #604e43;
+}
+
+.book:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
